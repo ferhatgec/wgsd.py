@@ -137,7 +137,7 @@ class wgsd:
                                 is_block = False
                             else:
                                 y = self.nodes[len(self.nodes) - 1]
-                                y.matched_datas[x[0]] = x[1].strip()
+                                y.matched_datas[x[0]] = ';'.join(x[1:]).strip()[:-1]
 
                         continue
 
